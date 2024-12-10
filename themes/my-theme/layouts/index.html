@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="my-height">
+<div class="container text-center">
+
+  <h1>{{ .Title }}</h2>
+    <h2>{{.Content}}</h2>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52o7m-j9CUnBn0cUc9tUjA9beXHDBZf_Daw&s"
+            class="rounded me-2 w-25" alt="alert">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>
+</div>
+
+</main>
+{{ end }}

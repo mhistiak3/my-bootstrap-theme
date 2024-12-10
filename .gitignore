@@ -1,0 +1,28 @@
+# Hugo build output (public directory)
+public/
+resources/
+hugo_stats.yaml
+
+# Temporary files and caches
+.cache/
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (if used with themes or other tools)
+node_modules/
+
+# Log files
+*.log
+
+# Hugo server artifacts
+*.bak
+*.swp
+
+# Generated files (if multilingual or output formats create duplicates)
+assets/generated/
+
+# Backup files
+*.tmp
+*.old
+*.orig
+*~
